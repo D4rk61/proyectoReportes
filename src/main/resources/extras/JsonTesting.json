@@ -15,3 +15,49 @@
 {
   "emailContacto": ["familiar3@example.com"]
 }
+
+
+// contacto del alumno
+
+http://localhost:8080/api/estudiante/updateContactos?dniEstudiante=123456784 | put
+
+params: dniEstudiante => 123456784
+
+
+// agregar un alumno
+//localhost:8080/api/estudiante/add | post
+
+{
+"nombre": "Jose",
+"apellido": "Reynoso",
+"dni": "123456784",
+"grado": "Quinto Bach",
+"edad": 17,
+"carrera": "BACHILLERATO_COMPUTACION",
+"emailPersonal": "reynosojose2005@gmail.com"
+}
+
+
+// agregar un profe:
+http://localhost:8080/api/profesor/add | post
+{
+"dni": "123456789",
+"nombre": "Juan",
+"apellido": "Pérez",
+"email": "juan.perez@example.com",
+"materia": "Matemáticas",
+"grado": "10A",
+"password": "password123"
+}
+
+// agregar un reporte
+http://localhost:8080/api/reporte/add?dniAlumno=123456784&dniProfesor=123456789 | post
+
+// 2 params
+dniAlumno => 123456784
+dniProfesor => 123456789
+
+{
+"titulo": "Se salio de la clase",
+"descripcion": "En el salon de la manana, se fue sin decir mas y me insulto"
+}
