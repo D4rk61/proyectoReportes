@@ -1,0 +1,17 @@
+// Agregar un nuevo estudiante
+
+{
+  "dni": "123456789",
+  "nombre": "Juan",
+  "apellido": "Perez",
+  "grado": "10",
+  "edad": 15,
+  "carrera": "NULL",
+  "emailPersonal": "juan@example.com"
+}
+
+// agregar contactos
+
+{
+  "emailContacto": ["familiar3@example.com"]
+}
